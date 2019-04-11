@@ -1,0 +1,299 @@
+@charset"UTF-8";
+body, a{
+    color: #515151;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: 0;
+}
+a:hover{
+    opacity: 0.6;
+}
+h1{
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Huragino Mincho ProN", "HG明朝E", "MS P明朝", serif;
+    color: #FFF;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 5px rgba(31, 50, 53, 0.8), 0 0 5px rgba(31, 50, 53, 0.3);
+    margin: 0;
+}
+h2{
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Huragino Mincho ProN", "HG明朝E", "MS P明朝", serif;
+    font-size: 2.6rem;
+    letter-spacing: 0.5rem;
+}
+.contentWrapper{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header .contentWrapper{
+    padding-top: 18rem;
+}
+header{
+    background-image: url(../../img/mainBg.jpg);
+    height: 590px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header nav{
+    position: absolute;
+    right: 0;
+}
+header a {
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+header ul{
+    display: flex;
+    margin: 0;
+    padding: 20px;
+}
+header li {
+    padding: 0 15px;
+}
+
+#aboutus P{
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+#topics{
+    background-image: url(../../img/tpBk.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+#topics figcaption{
+    font-size: 0.8rem;
+}
+#topics .flexcontent{
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+#topics .flexcontent p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 160%;
+}
+#topics figure img{
+    width: 100%;
+}
+#news dl{
+    width: 80%;
+    margin: 0 auto;
+}
+#news dt,#news dd{
+    float: left;
+    text-align: left;
+    padding:  10px 0;
+    line-height:  160%;
+    margin-bottom: 2rem;
+}
+#news dt{
+    width: 10%
+}
+#news dd{
+    width: 80%
+}
+#gallery{
+    background-image: url(../../img/glBg.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+#gallery p{
+    font-size: 1.5rem;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Huragino Mincho ProN", "HG明朝E", "MS P明朝", serif;
+}
+#gallery img{
+    width:100%;
+}
+footer p,footer h2{
+    margin: 0;
+}
+footer nav{
+    width: 70%;
+    margin: 0 auto;
+}
+#upperfooter{
+    margin-top: 50px;
+    background-color: #dfdfdf;
+}
+#upperfooter li{
+    flex-grow: 1;
+    flex-basis: auto;
+}
+small{
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+#bottomfooter{
+    background-color: #343434;
+    text-align: center;
+}
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+
+@media screen and (max-width: 480px){
+    img{
+        border: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    .contentWrapper {
+        width: 90%;
+    }
+    .contentWrapper img{
+        width: 60%;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    header{
+        height: 300px;
+    }
+    header .contentWrapper{
+        width: 100%;
+        padding-top: 8rem;
+    }
+    header nav{
+        background: rgba(255,255, 255, 0.85);
+        position: fixed;
+        z-index: 1;
+        display: none;
+        width: 100%;
+        top: 55px;
+    }
+    header nav ul{
+        display: block;
+        padding: 20px 0 12rem 0;
+    }
+    header nav li{
+        font-size: 0.85rem;
+        padding: 20px;
+        color: #606060;
+        border-bottom: 1px solid rgba(118,123,133,0.3);
+        text-align: center;
+    }
+    header nav a{
+        color: #333;
+        font-weight: normal;
+        text-shadow: none;
+    }
+    header nav a :hover{
+        color: #1861ae!important;
+    }
+    #menuWrapper{
+        width: 100%;
+        background: rgba(255,255,255,0.85);
+        padding: 15px 15px 10px 15px;
+        box-sizing: border-box;
+    }
+    .trigger,.trigger span{
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+    .trigger{
+        position: relative;
+        width: 35px;
+        height: 30px;
+    }
+    .trigger span{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #718085;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    .trigger a:hover{
+        opacity:1;
+    }
+    .trigger span:nth-of-type(1){
+        top: 0;
+    }
+    .trigger span:nth-of-type(2){
+        top: 12px;
+    }
+    .trigger span:nth-of-type(3){
+        bottom: 0;
+    }
+    .trigger.active span:nth-of-type(1){
+        -webkit-transform: translateY(10px) rotate(-45deg);
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .trigger.active span:nth-of-type(2){
+        left: 50%;
+        opacity: 0;
+        -webkit-animation: active-menu-bar02 .8s forwards;
+        animation: active-menu-bar02 .8s forwards;
+    }
+    @-webkit-keyframes active-menu-bar02 { 100% {height: 0;}}
+    @keyframes active-menu-bar02 {100% {height: 0;}}
+    .trigger.active span:nth-of-type(3){
+        -webkit-tranform: translateY(-15px) rotate(45deg);
+        transform: translateY(-15px) rotate(45deg);
+    }
+    .onanimation{
+        display: block;
+    }
+    #aboutus p {
+        font-size: 0.75rem;
+        line-height: 1.6rem;
+    }
+    #topics .flexcontent{
+        margin: 0 auto 3rem auto;
+    }
+    #topics .figcaption{
+        font-size: 0.65rem;
+    }
+    #news dt{
+        width: 100%;
+        padding: 10px 0;
+    }
+    #news dd{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    #gallery p{
+        font-size: 1rem;
+    }
+    #upperfooter .contentWrapper, footer nav{
+        width: 100%;
+    }
+    #upperfooter li{
+        flex-grow: 1;
+        flex-basis: auto;
+        border-bottom: 1px solid #c0c0c0;
+        padding: 1rem 0;
+    }
+    #upperfooter li:first-child{
+        border-top: 1px solid #c0c0c0;
+    }
+    .flex{
+        display: block;
+    }
+
+
+}
