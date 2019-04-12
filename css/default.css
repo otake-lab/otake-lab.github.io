@@ -1,0 +1,22 @@
+.navbar-brand {
+  background: url("../img/opaclogo.png") no-repeat left center;
+  background-size: contain;
+  height: 64px;
+  width: 335px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  header.jumbotron .container p {
+    font-size: 16px;
+  }
+}
+.sidebar aside {
+  background: #F5F5F5;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
