@@ -33,6 +33,13 @@ h2{
     padding: 2rem 0;
 }
 
+.navbar-brand {
+  background: url("../img/opaclogo.png") no-repeat left center;
+  background-size: contain;
+  height: 64px;
+  width: 335px;
+}
+
 /* header .contentWrapper{
     padding-top: 18rem;
 } */
@@ -110,7 +117,7 @@ header li {
 }
 #gallery p{
     font-size: 1.5rem;
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Huragino Mincho ProN", "HG明朝E", "MS P明朝", serif;
+    font-family: "Sawarabi Gothic", serif;
 }
 #gallery img{
     width:100%;
