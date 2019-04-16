@@ -1,4 +1,4 @@
-$font-primary: 'Roboto', Arial, sans-serif;
+$font-primary: 'Roboto','Sawarabi Gothic', Arial, sans-serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -218,6 +218,9 @@ figure {
 				font-weight: 300;
 				color: rgba($brand-black,.5);
 			}
+		}
+		img{
+			max-width: 80%;
 		}
 	}
 	#rs-main-menu {
