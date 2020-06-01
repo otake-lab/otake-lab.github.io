@@ -1,5 +1,4 @@
 ---
-title: Home
 layout: default
 ---
 
@@ -10,8 +9,8 @@ layout: default
     <h1 id="rs-logo"><a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}"></a></h1>
     <nav id="rs-main-menu" role="navigation">
         <ul>
-            <li class="rs-active"><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/news/' | relative_url }}">News</a></li>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li class="rs-active"><a href="{{ '/news/' | relative_url }}">News</a></li>
             <li><a href="{{ '/member/' | relative_url }}">Member</a></li>
             <li><a href="{{ '/study/' | relative_url }}">Study</a></li>
             <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
@@ -42,5 +41,5 @@ layout: default
 </aside>
 
 <div id="rs-main">
-
+    {{ content }}
 </div>

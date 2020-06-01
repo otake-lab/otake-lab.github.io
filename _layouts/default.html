@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description}}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    <meta name="robots" content="noindex">
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link rel=" shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{ '/assets/css/animate.css' | relative_url }}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{ '/assets/css/icomoon.css' | relative_url }}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="{{ '/assets/css/flexslider.css' | relative_url }}">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <!-- Modernizr JS -->
+    <script src="{{ '/assets/js/modernizr-2.6.2.min.js' | relative_url }}"></script>
+
+</head>
+
+
+<body>
+    <div id="rs-page">
+        {{ content }}
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+    <!-- jQuery Easing -->
+    <script src="{{ '/assets/js/jquery.easing.1.3.js' | relative_url }}"></script>
+    <!-- Bootstrap -->
+    <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+    <!-- Waypoints -->
+    <script src="{{ '/assets/js/jquery.waypoints.min.js' | relative_url }}"></script>
+    <!-- Flexslider -->
+    <script src="{{ '/assets/js/jquery.flexslider-min.js' | relative_url }}"></script>
+
+
+    <!-- MAIN JS -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+
+</html>
