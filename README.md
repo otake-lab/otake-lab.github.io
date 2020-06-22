@@ -1,18 +1,29 @@
 # Otake-lab.site
 
-## サイト構成
-[jekyll](http://jekyllrb-ja.github.io/)という静的サイトジェネレータを使用しています．
+## ファイル構成
+[jekyll](http://jekyllrb-ja.github.io/)という静的サイトジェネレータを使用しています．markdownで記事がかけます．便利．  
 
 ```
-index.html                          # トップページ
-    |
-    |- _posts
-    |    |- 2020-06-23-title.md     # markdown形式のニュース
-    |    
-    |- member.html                  # 研究室に在籍する人のリスト
-    |- news.html                    # ニュース
-    |- study.html                   # 研究内容
-    |- contact.html                 # 連絡先
+   ./
+    ├── _config.yml             # * jekyll用のconfigファイル
+    ├── _includes               # Layoutでincludeするファイル（普段はさわらない）
+    |   ├── footer.html         
+    |   └── header.html
+    ├── _layouts                # Layoutを定義するファイル（普段はさわらない）
+    |   ├── default.html
+    |   └── post.html
+    ├── _posts                  # * 投稿（markdownで書きます）
+    |   ├── 2007-10-29-this-is-posts.md
+    |   └── 2009-04-26-hahaha.md
+    ├── _sass                   # sassを突っ込んどくところ（普段はさわらない）
+    |   ├── _base.scss
+    |   └── _layout.scss
+    ├── _site                   # 出力用フォルダ（この中身は自動生成なので保存しません！）
+    ├── member.html             # * メンバー一覧
+    ├── contact.html            # * 連絡先
+    ├── news.html               # * ニュース
+    └── index.html              # * トップページ
+    
 ```
 
 ## Newsの更新方法
