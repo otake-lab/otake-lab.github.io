@@ -18,3 +18,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-minifier
+
+jekyll-minifier:
+  exclude: 'atom.xml'
