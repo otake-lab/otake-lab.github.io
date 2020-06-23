@@ -1,0 +1,24 @@
+title: 東海大学大竹研究室
+description:  東海大学情報通信学部大竹研究室の公式サイトです．
+baseurl: ""
+url: "https://otake-lab.github.io/"
+
+author:
+  name: otake-lab
+  facebook: otake.lab
+  twitter: otake_lab
+  instagram: otake.lab.tokai
+
+paginate: 3
+paginate_path: page:num
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-minifier
+
+jekyll-minifier:
+  exclude: 'atom.xml'
