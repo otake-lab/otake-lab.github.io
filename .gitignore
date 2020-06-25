@@ -5,3 +5,4 @@ _site
 Gemfile.lock
 .vscode/
 .jekyll-cache
+.DS_STORE
