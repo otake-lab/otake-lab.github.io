@@ -5,3 +5,4 @@ Gemfile.lock
 .vscode/
 .jekyll-cache
 .DS_STORE
+*.DS_Store
