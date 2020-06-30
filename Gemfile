@@ -12,3 +12,5 @@ gem "jekyll-paginate", "~> 1.1"
 gem "jekyll-feed", "~> 0.14.0"
 
 gem "jekyll-minifier", "~> 0.1.10"
+
+

@@ -15,6 +15,7 @@ paginate_path: page:num
 sass:
   style: compressed
 
+
 plugins:
   - jekyll-paginate
   - jekyll-feed
