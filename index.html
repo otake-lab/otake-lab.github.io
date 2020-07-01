@@ -43,11 +43,160 @@ layout: default
 </aside>
 
 <div id="rs-main">
-    {% for post in site.posts %}
-    <article class="archive">
-        <h2 class="archive__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p class="archive__date"><time>{{ post.date | date: '%B %d, %Y' }}</time></p>
-        <div class="archive__excerpt">{{ post.excerpt }}</div>
-    </article>
-    {% endfor %}
+    <aside id="rs-hero" class="js-fullheight">
+        <div class="flexslider js-fullheight">
+            <ul class="slides">
+                <li style="background-image: url(assets/images/home/image_1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>大竹研究室へようこそ！</h1>
+                                    <h2>私たち大竹研究室では主に「マーケティング」、「データサイエンス」の領域を中心に研究しています。ご興味のある方は是非、大竹研究室にお越しください！</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(assets/images/home/image_2.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>大竹研究室へようこそ！</h1>
+                                    <h2>私たち大竹研究室では主に「マーケティング」、「データサイエンス」の領域を中心に研究しています。ご興味のある方は是非、大竹研究室にお越しください！</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(assets/images/home/image_3.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>大竹研究室へようこそ！</h1>
+                                    <h2>私たち大竹研究室では主に「マーケティング」、「データサイエンス」の領域を中心に研究しています。ご興味のある方は是非、大竹研究室にお越しください！</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="rs-narrow-content">
+        <h2 class="rs-heading animate-box" data-animate-effect="fadeInLeft">Services</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="rs-feature animate-box" data-animate-effect="fadeInLeft">
+                    <div class="rs-icon">
+                        <i class="icon-settings"></i>
+                    </div>
+                    <div class="rs-text">
+                        <h3>研究分野</h3>
+                        <p>データサイエンス</p>
+                        <p>消費者行動</p>
+                        <p>社会ネットワーク</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="rs-feature animate-box" data-animate-effect="fadeInLeft">
+                    <div class="rs-icon">
+                        <i class="icon-search4"></i>
+                    </div>
+                    <div class="rs-text">
+                        <h3>研究内容</h3>
+                        <p>本研究室では、マーケティングや経営問題について、データ分析やモデル分析のための手法の開発などに関する研究を主に行っています。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="rs-feature animate-box" data-animate-effect="fadeInLeft">
+                    <div class="rs-icon">
+                        <i class="icon-paperplane"></i>
+                    </div>
+                    <div class="rs-text">
+                        <h3>研究テーマ</h3>
+                        <p>ソーシャルメディア情報を用いたユーザ（消費者）行動プロセスに関する研究</p>
+                        <p>小売業におけるオペレーションズ・リサーチ及びデータマイニング技法を用いた問題解決に関する研究</p>
+                        <p>SNSを活用したコミュニケーション支援に関する研究</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rs-narrow-content">
+        <h2 class="rs-heading animate-box" data-animate-effect="fadeInLeft">Recent Blog</h2>
+        <div class="row row-bottom-padded-md">
+            <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                <div class="blog-entry">
+                    <a href="#" class="blog-img"><img src="assets/images/img-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                    <div class="desc">
+                        <h3><a href="#">Inspirational Website</a></h3>
+                        <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                        <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                        <a href="#" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                <div class="blog-entry">
+                    <a href="#" class="blog-img"><img src="assets/images/img-2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                    <div class="desc">
+                        <h3><a href="#">Inspirational Website</a></h3>
+                        <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                        <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                        <a href="#" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                <div class="blog-entry">
+                    <a href="#" class="blog-img"><img src="assets/images/img-3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                    <div class="desc">
+                        <h3><a href="#">Inspirational Website</a></h3>
+                        <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                        <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                        <a href="#" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+                <div class="blog-entry">
+                    <a href="#" class="blog-img"><img src="assets/images/img-4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                    <div class="desc">
+                        <h3><a href="#">Inspirational Website</a></h3>
+                        <span><small>by Admin </small> / <small> Web Design </small> / <small> <i class="icon-comment"></i> 14</small></span>
+                        <p>Design must be functional and functionality must be translated into visual aesthetics</p>
+                        <a href="#" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="get-in-touch">
+        <div class="rs-narrow-content">
+            <div class="row">
+                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                    <h1 class="rs-heading-colored">Get in touch</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <p class="rs-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p><a href="#" class="btn btn-primary">Learn More</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
